@@ -1,4 +1,4 @@
-#!/usr/bin/env
+#!/usr/bin/env python3
 
 '''
 Derek Lin
@@ -23,7 +23,7 @@ for i in range(width):
         matrix[i].append([0, 0, 0])
 
 def writePpmFile(matrix):
-    file = open("line.ppm", "w")
+    file = open("lineTest.ppm", "w")
     file.write("P3\n")
     file.write("{} {} {}\n".format(width, height, colorDepth))
     for i in range(height):
@@ -131,3 +131,4 @@ drawLine(matrix, [249,249], [374,499], randColor())
 drawLine(matrix, [249,249], [499,374], randColor())
 
 writePpmFile(matrix)
+print('lineTest.ppm')
