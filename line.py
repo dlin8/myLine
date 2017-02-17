@@ -131,4 +131,3 @@ drawLine(matrix, [249,249], [374,499], randColor())
 drawLine(matrix, [249,249], [499,374], randColor())
 
 writePpmFile(matrix)
-print('lineTest.ppm')
